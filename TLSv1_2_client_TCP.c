@@ -8,8 +8,6 @@
 #include <netdb.h>
 #include <openssl/ssl.h>
 #include <openssl/err.h>
-
-
 void cert_key_files(SSL_CTX* ctx, char* CertF, char* KeyF)
 {
  
@@ -31,7 +29,6 @@ void cert_key_files(SSL_CTX* ctx, char* CertF, char* KeyF)
         abort();
     }
 }
-
 int client_init_sock(const char *hostname, int port)
 {   int sd;
     struct hostent *host;
